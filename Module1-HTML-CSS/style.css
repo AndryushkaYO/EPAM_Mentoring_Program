@@ -51,6 +51,15 @@ body {
     justify-content: center;
 }
 
+.online::before {
+    content: '';
+    width: 40px;
+    height: 200px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 0;
+}
+
 
 /* *********** SIDE MENU SECTION ************ */
 
@@ -276,4 +285,74 @@ body {
 
 .user-icon:hover {
     background-color: rgb(152, 161, 172);
+}
+
+/* *********** MAIN INFO BLOCK SECTION ************ */
+
+.main-header {
+    height: 55px;
+    background-color: #36393f;
+    border-bottom: 2px solid #202225;
+    z-index: 1000;
+}
+
+.main-block {
+    width: 100%;
+}
+
+.users-section {
+    background-color: #2f3136;
+    width: 240px;
+    float: right;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.users {
+    padding: 70px 10px 0 10px;
+    overflow-y: auto;
+    height: 100%;
+}
+
+.user {
+    padding: 3px 10px;
+    position: relative;
+    color: #8e9297;
+    margin: 7px 0;
+}
+
+.user:hover {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.07);
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.user.centralized {
+    justify-content: flex-start;
+}
+
+.user-photo {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.users-subheader {
+    text-transform: uppercase;
+    color: #8e9297;
+    font-size: 12px;
+    padding-left: 10px;
+    font-weight: 600;
+    padding-top: 10px;
+}
+
+.offline-users .user {
+    opacity: 0.7;
+}
+
+.offline-users .user:hover {
+    opacity: 1;
 }
