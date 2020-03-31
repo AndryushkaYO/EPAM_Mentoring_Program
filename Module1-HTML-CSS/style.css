@@ -27,6 +27,10 @@ body {
     cursor: pointer;
 }
 
+.white {
+    color: #ffffff;
+}
+
 .light-grey {
     color: #dcddde;
 }
@@ -376,3 +380,61 @@ body {
 .offline-users .user:hover {
     opacity: 1;
 }
+
+
+/* *********** MAIN HEADER SECTION ************ */
+
+.main-header {
+    justify-content: space-between;
+    height: 55px;
+    background-color: #36393f;
+    border-bottom: 2px solid #202225;
+    width: auto;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    color: #676B71;
+}
+
+.main-header svg {
+    margin: 0 5px;
+}
+
+.header-toolbar {
+    display: flex;
+}
+.header-toolbar div {
+    margin: 0 5px;
+}
+
+.header-toolbar svg:hover {
+    color: #DCDDDE;
+    cursor: pointer;
+}
+
+.search input {
+    padding: 5px;
+    border: none;
+    float: left;
+    width: 120px;
+    background: #202225;
+    color: #676B71;
+    border-radius: 5px 0 0 5px;
+}
+
+.search input:focus {
+    width: 250px;
+    outline: none;
+}
+
+.search button {
+    float: left;
+    width: 40px;
+    height: 27px;
+    background: #202225;
+    color: #dcddde;
+    border: none;
+    cursor: text;
+    border-radius: 0 5px 5px 0;
+}
+
