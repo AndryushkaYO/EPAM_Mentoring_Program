@@ -16,6 +16,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #36393F;
 }
 
 .icon {
@@ -346,6 +347,7 @@ body {
     position: relative;
     color: #8e9297;
     margin: 7px 0;
+    height: 48px;
 }
 
 .user:hover {
@@ -438,3 +440,106 @@ body {
     border-radius: 0 5px 5px 0;
 }
 
+/* *********** CENTER SECTION ************ */
+
+.center-section {
+    background-color: #36393F;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    color: #b9bbbe;
+    position: absolute;
+    height: 85%;
+    padding: 60px 350px;
+    padding-bottom: 0;
+    overflow-y: auto;
+}
+
+.message {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding: 5px 0;
+}
+
+.message .user {
+    margin: 0;
+}
+
+.message .date {
+    font-size: 10px;
+    padding-left: 10px;
+}
+
+.message p, pre {
+    margin: 5px 0;
+}
+
+.message a {
+    color: #00b0f4;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.message a:hover {
+    text-decoration: underline;
+}
+
+.message:hover {
+    background-color: #32353B;
+    border-radius: 5px;
+}
+
+.message .user:hover {
+    background-color: inherit;
+}
+
+.message .mention {
+    color: #7289DA;
+    background-color: rgba(114, 137, 218, 0.1);
+    transition: background-color 1s ease ;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+.message .mention:hover {
+    background-color: rgba(114, 137, 218, 1);
+    color: #fff;
+    cursor: pointer;
+}
+
+.input-section input {
+    background-color: #40444B;
+    font-size: 18px;
+    width: 75%;
+    padding: 10px 0;
+    border-radius: 0;
+    color: #dcddde;
+    border: none;
+    cursor: text;
+    float: left;
+}
+
+.input-section button {
+    background-color: #40444B;
+    height: 43px;
+    border-radius: 0;
+    float: left;
+    width: 40px;
+    color: #dcddde;
+    border: none;
+    cursor: text;
+}
+
+.input-section {
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 25px;
+    padding-right: 650px;
+    width: 100%;
+}
+
+.input-section svg:hover {
+    color: #fff;
+    cursor: pointer;
+}
