@@ -1,0 +1,102 @@
+* {
+  position: inherit;
+  box-sizing: border-box;
+}
+
+.main-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 525px;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.left-block, .right-block {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.left-block div, .right-block div {
+  border: 4px solid black;
+}
+
+.left-block div:hover, .right-block div:hover {
+  cursor: pointer;
+}
+
+#green-block {
+  background-color: rgb(40, 179, 40);
+  height: 525px;
+  width: 320px;
+}
+
+#orange-block {
+  background-color: orange;
+  height: 150px;
+  width: 250px;
+  left: 30px;
+  position: absolute;
+  bottom: 25px;
+}
+
+#red-block {
+  background-color: red;
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  top: 0;
+}
+
+#gray-block {
+  background-color: silver;
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  left: 70px;
+  top: 70px;
+}
+
+#blue-block {
+  background-color: skyblue;
+  height: 200px;
+  width: 300px;
+  position: absolute;
+  bottom: 0;
+}
+
+#pink-block {
+  background-color: pink;
+  height: 130px;
+  width: 180px;
+  position: absolute;
+  left: -45px;
+  top: 30px;
+}
+
+#blue-block:hover {
+  background-color: rgb(181, 234, 255);
+}
+
+#pink-block:hover {
+  background-color: rgb(255, 215, 222);
+}
+
+#gray-block:hover {
+  background-color: rgb(214, 214, 214);
+}
+
+#red-block:hover {
+  background-color: rgb(255, 86, 86);
+}
+
+#orange-block:hover {
+  background-color: rgb(255, 198, 92);
+}
+
+#green-block:hover {
+  background-color: rgb(6, 194, 6);
+}
