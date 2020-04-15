@@ -110,7 +110,8 @@ function modifyDecimals(el) {
 
 function modifyArray(arr, func1, func2) {
   return arr.map(el => {
-    if(func1(el)) return func1(el);
-    else return func2(el);
+    let func1Result = func1(el);
+
+    return func1Result ? func1Result : func2(el);
   });
 }
